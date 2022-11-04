@@ -1,18 +1,18 @@
 /* Class */
-#wrap .nav a.on{
+#wrap .nav a.on {
     color: rgb(219, 193, 162);
 }
 
-#q_mn .nav a.on{
+#q_mn .nav a.on {
     color: rgb(219, 193, 162);
 }
 
 /* CSS */
-#wrap{
+#wrap {
     width: 100%;
 }
 
-#main{
+#main {
     width: 100%;
     height: 100vh;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' viewBox='0 0 1920 1080' class='overflow-hidden rounded-md drop-shadow-lg transition duration-300' style='overflow: hidden; height: 85vh;'%3E%3Crect width='1920' height='1080' fill='%23404258'%3E%3C/rect%3E%3Cg clip-path='url(&quot;%23SvgjsClipPath3704&quot;)'%3E%3Cg transform='matrix(0.04013442120787624,1.14929945107196,-1.14929945107196,0.04013442120787624,1534.0189723672502,-575.3329945168887)'%3E%3Cpath d='M0,-1080C-1.4463516654502016,-1000.1463284411577,-12.05053765784342,-774.1723804996195,-8.67810999270121,-600.8779706469467C-5.3056823275589995,-427.5835607942738,12.146023384706046,-218.07541543507236,20.234565990853255,-40.233540883962746C28.323108597000463,137.60833366714687,42.78543450556562,273.93878037465686,39.85314564418205,466.1732766597109C36.92085678279848,658.4077729447649,12.085147138920382,916.911912675677,2.640832822551843,1113.1734368263615C-6.803481493816696,1309.434960977046,-16.372601450270547,1469.2713277015448,-16.812740254029187,1643.742421563818C-17.252879057787826,1818.2135154260911,-2.802123375671531,2073.957070260636,0,2160L 1920 2160 L 1920 -1080 Z' fill='url(&quot;%23SvgjsLinearGradient3702&quot;)'%3E%3C/path%3E%3Cpath d='M960,-1080C971.5853434767952,-962.673858605701,1019.2314295040941,-594.5726027632492,1029.512060860771,-376.04315163420597C1039.792692217448,-157.5137005051628,1044.5944995894924,23.303437297695467,1021.6837881400618,231.1767067742589C998.7730766906312,439.0499762508223,908.0643959673783,666.9867396394914,892.0477921641876,871.1964652251745C876.0311883609969,1075.4061908108577,914.2587973482821,1241.6344711592203,925.5841653209175,1456.4350602883578C936.9095332935528,1671.2356494174953,954.2640275534862,2042.7391767147262,960,2160L 1920 2160 L 1920 -1080 Z' fill='url(&quot;%23SvgjsLinearGradient3703&quot;)'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3Cdefs%3E%3ClinearGradient x1='0.1' y1='0' x2='0' y2='1' id='SvgjsLinearGradient3702'%3E%3Cstop stop-color='%23404258' offset='0'%3E%3C/stop%3E%3Cstop stop-color='%23404658' offset='0'%3E%3C/stop%3E%3C/linearGradient%3E%3ClinearGradient x1='0.1' y1='0' x2='0' y2='1' id='SvgjsLinearGradient3703'%3E%3Cstop stop-color='%239c9eb7' offset='0'%3E%3C/stop%3E%3Cstop stop-color='%239ca3b7' offset='0.5'%3E%3C/stop%3E%3C/linearGradient%3E%3CclipPath id='SvgjsClipPath3704'%3E%3Crect width='1920' height='1080'%3E%3C/rect%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
@@ -21,25 +21,25 @@
 }
 
 
-#main .in_main{
+#main .in_main {
     margin: 0 auto;
     width: 1500px;
     height: 70vh;
 }
 
-#main .header{ 
-    width: 100%; 
+#main .header {
+    width: 100%;
     height: 120px;
-} 
-
-#main .logo{
-    float: left; 
-    margin: 20px 0 0 0;  
-    width: 180px; 
-    height: 80px;  
 }
 
-#main .nav{
+#main .logo {
+    float: left;
+    margin: 20px 0 0 0;
+    width: 180px;
+    height: 80px;
+}
+
+#main .nav {
     width: 600px;
     float: right;
     margin: 40px 0 0 0;
@@ -47,13 +47,13 @@
     justify-content: space-between;
 }
 
-#main .nav a{
+#main .nav a {
     font-size: 20px;
     font-weight: 600;
     color: #fff;
 }
 
-#main .m_pic{
+#main .m_pic {
     width: 500px;
     height: 60vh;
     margin: 80px 0 0 90px;
@@ -65,118 +65,236 @@
     overflow: hidden;
 }
 
-#main .m_pic img{
+#main .m_pic img {
     width: 500px;
     height: 60vh;
 }
 
-#main .m_text{
+#main .m_text {
     float: right;
     margin: 230px 50px 0 0;
 }
 
-#main .m_text h1{
-    font-size: 85px;
+#main .m_text h1 {
+    font-size: 70px;
     color: #fff;
 }
 
-#main .m_text h3{
+#main .m_text h3 {
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 15px;
     color: #fff;
 }
 
-#profile{
+#profile {
     width: 100%;
     height: 100vh;
     background-color: rgb(71, 78, 104);
 }
 
-#profile .in_profile{
+#profile .in_profile {
     margin: 0 auto;
     width: 1500px;
     height: 100vh;
 }
 
-#profile .in_profile .logo{
+#profile .in_profile .logo {
     padding-top: 50px;
     font-size: 70px;
     color: #fff;
 }
 
+#profile .in_profile .pic_box {
+    float: left;
+}
 
-#skill{
+#profile .in_profile .pic {
+    position: relative;
+    width: 450px;
+    height: 60vh;
+    margin: 70px 30px 70px 100px;
+    border: 7px solid #fff;
+    background-color: cadetblue;
+    z-index: 3000;
+}
+
+#profile .in_profile .pic img {
+    width: 400px;
+    height: 60vh;
+}
+
+#profile .in_profile .pic_f {
+    position: absolute;
+    top: 1200px;
+    width: 400px;
+    height: 60vh;
+    margin-left: 60px;
+    border: 7px solid #fff;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+#profile .in_profile .text {
+    margin: 70px 150px 0 0;
+    float: right;
+    width: 700px;
+    height: 60vh;
+}
+
+#profile .in_profile .text_box {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 18px;
+}
+
+#profile .in_profile .text_box li:nth-child(1) {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+#profile .in_profile .text_box>div {
+    width: 20vh;
+    margin: 20px 0 20px 0;
+    background-color: #fff;
+    border: 3px solid #fff;
+}
+
+#skill {
     width: 100%;
     height: 100vh;
     background-color: rgb(80, 87, 122);
 }
 
-#skill .in_skill{
+#skill .in_skill {
     margin: 0 auto;
     width: 1500px;
     height: 100vh;
 }
 
-#skill .in_skill .logo{
+#skill .in_skill .logo {
     padding-top: 50px;
     font-size: 70px;
     color: #fff;
 }
 
-#project{
+#skill .in_skill .graph_box {
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+    /* background-color: aliceblue; */
+}
+
+#skill .in_skill .graph {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+
+#skill .in_skill .graph li {
+    width: 350px;
+    height: 500px;
+}
+
+#skill .in_skill .graph li:nth-child(3) h3 {
+    margin-top: 49px;
+}
+
+#skill .in_skill .graph li h3 {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 30px;
+    color: #fff;
+}
+
+#skill .in_skill .graph li:nth-child(4) {
+    margin-top: -30px;
+}
+
+
+#skill .in_skill .graph li>div {
+    margin: 0 auto;
+    width: 280px;
+    height: 280px;
+    border-radius: 100%;
+    border: 10px solid #fff;
+}
+
+
+#skill .in_skill .graph .graph_s {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+#skill .in_skill .graph .graph_s h3 {
+    margin: 20px 0 20px 0;
+}
+
+
+#skill .in_skill .graph .graph_s div {
+    width: 115px;
+    height: 115px;
+    margin-bottom: 45px;
+}
+
+#project {
     width: 100%;
     height: 100vh;
     background-color: rgb(107, 114, 142);
 }
 
-#project .in_project{
+#project .in_project {
     margin: 0 auto;
     width: 1500px;
     height: 100vh;
 }
 
-#project .in_project .logo{
+#project .in_project .logo {
     padding-top: 50px;
     font-size: 70px;
     color: #fff;
 }
 
-#finish{
+#finish {
     width: 100%;
     height: 100vh;
     background-color: rgb(144, 148, 167);
 }
 
-#q_mn{
-    position: absolute; 
-    right:20px; 
-    top: 350px; 
+/* QUICK_MN */
+#q_mn {
+    position: absolute;
+    right: 20px;
+    top: 350px;
     z-index: 9999;
-    width:120px; 
-    height:205px; 
+    width: 120px;
+    height: 205px;
     border-radius: 8px;
     border: 3px solid #fff;
-    background-color: rgb(139, 188, 204); 
+    background-color: rgb(139, 188, 204);
 }
 
-#q_mn .nav{ 
+#q_mn .nav {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    width:60px;
+    width: 60px;
     height: 205px;
 }
 
-#q_mn .nav li{
+#q_mn .nav li {
     margin-top: 20px;
     text-align: center;
 }
 
-#q_mn .nav li:nth-child(1){
-    margin-top: 10px;
+#q_mn .nav li:nth-child(1) {
+    margin-top: 15px;
 }
 
-#q_mn .nav li a{
+#q_mn .nav li a {
     font-size: 15px;
     font-weight: 600;
     color: #fff;

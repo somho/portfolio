@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <script src="js/jquery.js"></script>
     <script src="js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 </head>
 
 <body>
@@ -40,12 +41,60 @@
         <div id="profile">
             <div class="in_profile">
                 <h1 class="logo">Profile.</h1>
+                <div class="pic_box">
+                    <div class="pic">
+                        <!-- <img src="./image/pic1.png" alt=""> -->
+                    </div>
+                    <div class="pic_f"></div>
+                </div>
+                <div class="text">
+                    <ul class="text_box">
+                        <li>About Me</li>
+                        <div></div>
+                        <li>ababdabwebawdadb</li>
+                        <li>adawdbadbawdbaw</li>
+                        <li>adbawdbawbawba</li>
+                        <li>afwajofjawofwjfao</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <!-- SKILL -->
         <div id="skill">
             <div class="in_skill">
                 <h1 class="logo">Skill.</h1>
+                <div class="graph_box">
+                    <ul class="graph">
+                        <li>
+                            <canvas id="pie1" width="250px" height="200px"></canvas>
+                            <h3>HTML</h3>
+                        </li>
+                        <li>
+                            <canvas id="pie2" width="250px" height="200px"></canvas>
+                            <h3>CSS</h3>
+                        </li>
+                        <li>
+                            <canvas id="pie3" width="250px" height="200px"></canvas>
+                            <h3>Java Script</h3>
+                        </li>
+                        <li>
+                            <ul class="graph_s">
+                                <li>
+                                    <canvas id="pie4-1" width="150px" height="150px"></canvas>
+                                    <h3>JAVA</h3>
+                                    <canvas id="pie4-2" width="150px" height="150px"></canvas>
+                                    <h3>C#</h3>
+                                </li>
+                                <li>
+                                    <canvas id="pie4-3" width="150px" height="150px"></canvas>
+                                    <h3>C++</h3>
+                                    <canvas id="pie4-4" width="150px" height="150px"></canvas>
+                                    <h3>Linux</h3>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <!-- PROJECT -->
