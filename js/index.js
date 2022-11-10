@@ -1,4 +1,23 @@
 $(function () {
+    //SECTION
+    var mHtml = $('html');
+    var page = 1;
+
+    mHtml.animate({scrollTop : 0},10);
+
+    $(window).on("wheel", function(e) {
+        if(mHtml.is(":animated")) return;
+        if(e.originalEvent.deltaY > 0) {
+            if(page == 5) return;
+            page++;
+        } else if(e.originalEvent.deltaY < 0) {
+            if(page == 1) return;
+            page--;
+        }
+        var posTop =(page-1) * $(window).height();
+        mHtml.animate({scrollTop : posTop});
+    })
+
     // NAV
     var menu = $('.nav > li');
     var contents = $('#wrap > div');
@@ -25,7 +44,7 @@ $(function () {
     });
 
     // M_TEXT
-    const content = "Hello. \n I'm Lee Seung Ho"
+    const content = "Hello.\n It's Seung Ho \n PORTFOLIO"
     const content2 = "UX Designer & Front End Developer."
     const text = document.querySelector('.text');
     const text2 = document.querySelector('.text2');
@@ -47,10 +66,18 @@ $(function () {
                 text2.innerHTML += txt2;
                 j++;
             }
-        }, 2000);
+        }, 1800);
     }
-    setInterval(typing, 70);
-    setInterval(typing2, 30)
+    setInterval(typing, 50);
+    setInterval(typing2, 20)
+
+    // M_PIC
+    const pic1 = document.querySelector('.pic1');
+    const pic3 = document.querySelector('.pic3');
+
+    pic1.classList.add('on');
+    pic3.classList.add('on');
+ 
 
     // GRAPH
     new Chart(document.getElementById("pie1"), {
