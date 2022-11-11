@@ -23,7 +23,6 @@
                     <ul class="nav">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Profile</a></li>
-                        <li><a href="#">Skill</a></li>
                         <li><a href="#">Project</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
@@ -38,7 +37,7 @@
                     <div class="pic3">
                         <img src="./image/pic3.jpg" alt="">
                     </div>
-                 </div>
+                </div>
                 <div class="m_text">
                     <h1 class="text"></h1>
                     <h3 class="text2"></h3>
@@ -48,59 +47,28 @@
         <!-- PROFILE -->
         <div class="section" id="profile">
             <div class="in_profile">
-                <h1 class="logo">Profile</h1>
-                <div class="pic_box">
-                    <div class="pic">
-                        <!-- <img src="./image/pic1.png" alt=""> -->
+                <h1 class="logo">About Me</h1>
+                <div class="group">
+                    <div class="pic_box"></div>
+                    <div class="intro_box">
+                        <h2>이승호</h2>
+                        <h3>Lee Seung Ho</h3>
+                        <div></div>
+                        <span>1996.05.21</span><br>
+                        <span>Busan</span><br>
+                        <span>010-XXXX-XXXX</span><br>
+                        <span>beyondle521@gmail.com</span><br>
                     </div>
                 </div>
-                <div class="text">
-                    <ul class="text_box">
-                        <li>About Me</li>
-                        <div></div>
-                        <li>ababdabwebawdadb</li>
-                        <li>adawdbadbawdbaw</li>
-                        <li>adbawdbawbawba</li>
-                        <li>afwajofjawofwjfao</li>
-                    </ul>
+                <div class="text_box">
+                    <div class="box1"></div>
+                    <div class="box2"></div>
                 </div>
-            </div>
-        </div>
-        <!-- SKILL -->
-        <div class="section" id="skill">
-            <div class="in_skill">
-                <h1 class="logo">Skill</h1>
-                <div class="graph_box">
-                    <ul class="graph">
-                        <li>
-                            <canvas id="pie1" width="250px" height="200px"></canvas>
-                            <h3>HTML</h3>
-                        </li>
-                        <li>
-                            <canvas id="pie2" width="250px" height="200px"></canvas>
-                            <h3>CSS</h3>
-                        </li>
-                        <li>
-                            <canvas id="pie3" width="250px" height="200px"></canvas>
-                            <h3>Java Script</h3>
-                        </li>
-                        <li>
-                            <ul class="graph_s">
-                                <li>
-                                    <canvas id="pie4-1" width="150px" height="150px"></canvas>
-                                    <h3>JAVA</h3>
-                                    <canvas id="pie4-2" width="150px" height="150px"></canvas>
-                                    <h3>C#</h3>
-                                </li>
-                                <li>
-                                    <canvas id="pie4-3" width="150px" height="150px"></canvas>
-                                    <h3>C++</h3>
-                                    <canvas id="pie4-4" width="150px" height="150px"></canvas>
-                                    <h3>Linux</h3>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+                <div class="text_box2">
+                    <div class="box3">
+                        <h3>Skill</h3>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -110,10 +78,34 @@
                 <h1 class="logo">Project</h1>
             </div>
         </div>
-        <!-- FINISH -->
+        <!-- CONTACT -->
         <div class="section" id="contact">
             <div class="in_contact">
                 <h1 class="logo">Contact</h1>
+                <form id="form">
+                    <div class="field">
+                        <label for="from_name">From_name</label>
+                        <input type="text" name="from_name" id="from_name">
+                    </div>
+                    <div class="field">
+                        <label for="to_name">To_name</label>
+                        <input type="text" name="to_name" id="to_name">
+                    </div>
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <input type="text" name="message" id="message">
+                    </div>
+                    <div class="field">
+                        <label for="tel">Tel</label>
+                        <input type="text" name="tel" id="tel">
+                    </div>
+                    <div class="field">
+                        <label for="reply_to">Reply_to</label>
+                        <input type="text" name="reply_to" id="reply_to">
+                    </div>
+
+                    <input type="submit" id="button" value="Send Email">
+                </form>
             </div>
         </div>
     </div>
@@ -122,11 +114,37 @@
         <ul class="nav">
             <li><a href="#">Home</a></li>
             <li><a href="#">Profile</a></li>
-            <li><a href="#">Skill</a></li>
             <li><a href="#">Project</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </div>
 </body>
+<!-- MAIL -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+    emailjs.init('CRztwVsXLzMBJUNV9')
+
+    const btn = document.getElementById('button');
+
+    document.getElementById('form')
+        .addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            btn.value = 'Sending...';
+
+            const serviceID = 'service_ddzcjss';
+            const templateID = 'template_jeauwhm';
+
+            emailjs.sendForm(serviceID, templateID, this)
+                .then(() => {
+                    btn.value = 'Send Email';
+                    alert('메일보내기 성공');
+                }, (err) => {
+                    btn.value = 'Send Email';
+                    alert(JSON.stringify(err));
+                });
+        });
+</script>
 
 </html>

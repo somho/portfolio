@@ -7,16 +7,16 @@
     color: rgb(219, 193, 162);
 }
 
-#main .m_pic .pic1.on{
+#main .m_pic .pic1.on {
     opacity: 1;
 }
 
-#main .m_pic .pic3.on{
+#main .m_pic .pic3.on {
     opacity: 1;
- }
+}
 
 /* CSS */
-html{
+html {
     overflow: hidden;
 }
 
@@ -78,7 +78,7 @@ html{
     /* border: 2px solid #000; */
 }
 
-#main .m_pic .pic1{
+#main .m_pic .pic1 {
     width: 250px;
     height: 450px;
     margin: 30px 0 0 80px;
@@ -91,13 +91,13 @@ html{
     transition: all .8s ease-in-out;
 }
 
-#main .m_pic .pic1 img{
+#main .m_pic .pic1 img {
     width: 250px;
     height: 450px;
 }
 
 
-#main .m_pic .pic3{
+#main .m_pic .pic3 {
     width: 600px;
     height: 200px;
     margin: 50px 0 0 80px;
@@ -148,145 +148,99 @@ html{
     font-family: 'Manse';
 }
 
-#profile .in_profile .pic_box {
+#profile .in_profile .group {
+    width: 400px;
+    height: 790px;
     float: left;
-}
-
-#profile .in_profile .pic {
-    position: relative;
-    width: 450px;
-    height: 60vh;
-    margin: 70px 30px 70px 100px;
-    box-shadow: 15px 15px rgb(75, 68, 68);
-    background-color: rgb(25, 69, 122);
-    z-index: 3000;
-}
-
-#profile .in_profile .pic img {
-    width: 400px;
-    height: 60vh;
-}
-
-/* #profile .in_profile .pic_f {
-    position: absolute;
-    top: 1200px;
-    width: 400px;
-    height: 60vh;
-    margin-left: 60px;
-    border: 7px solid #fff;
-    box-sizing: border-box;
-    z-index: 2;
-} */
-
-#profile .in_profile .text {
-    margin: 70px 150px 0 0;
-    float: right;
-    width: 700px;
-    height: 60vh;
-}
-
-#profile .in_profile .text_box {
-    display: flex;
-    flex-direction: column;
-    color: #000;
-    font-size: 18px;
-}
-
-#profile .in_profile .text_box li:nth-child(1) {
-    font-size: 50px;
-    font-weight: 700;
-}
-
-#profile .in_profile .text_box>div {
-    width: 20vh;
-    margin: 20px 0 20px 0;
-    background-color: #fff;
-    border: 3px solid #000;
-}
-
-#skill {
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(240, 240, 240);
-}
-
-#skill .in_skill {
-    margin: 0 auto;
-    width: 1500px;
-    height: 100vh;
-}
-
-#skill .in_skill .logo {
-    padding-top: 50px;
-    font-size: 70px;
-    color: #000;
-    font-family: 'Manse';
-}
-
-#skill .in_skill .graph_box {
-    width: 100%;
-    height: 500px;
-    margin-top: 20px;
     /* background-color: aliceblue; */
 }
 
-#skill .in_skill .graph {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 150px;
-}
-
-#skill .in_skill .graph li {
-    width: 350px;
-    height: 500px;
-}
-
-#skill .in_skill .graph li:nth-child(3) h3 {
-    margin-top: 49px;
-}
-
-#skill .in_skill .graph li h3 {
-    text-align: center;
-    margin-top: 60px;
-    font-size: 30px;
-    color: #000;
-}
-
-#skill .in_skill .graph li:nth-child(4) {
-    margin-top: -30px;
-}
-
-
-#skill .in_skill .graph li>div {
-    margin: 0 auto;
-    width: 280px;
-    height: 280px;
+#profile .in_profile .pic_box {
+    width: 200px;
+    height: 200px;
+    margin: 140px 0 0 90px;
     border-radius: 100%;
-    border: 10px solid #fff;
+    background-color: #fff;
+    border: 8px solid transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(#fff, #fff),
+        linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+#profile .in_profile .intro_box {
+    width: 300px;
+    height: 200px;
+    margin: 30px 0 0 50px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+#profile .in_profile .intro_box>div {
+    width: 90px;
+    height: 4px;
+    margin: 10px 0 15px 105px;
+    background-color: rgb(25, 69, 122);
+}
+
+#profile .in_profile .intro_box>h3 {
+    font-size: 15px;
 }
 
 
-#skill .in_skill .graph .graph_s {
+#profile .in_profile .intro_box>span {
+    margin-left: -3px;
+}
+
+#profile .in_profile .text_box {
+    float: right;
+    width: 1000px;
+    height: 400px;
+    margin: 0 0 0 0;
     display: flex;
     justify-content: space-between;
-    width: 300px;
-    height: 500px;
-    margin: 0 auto;
 }
 
-#skill .in_skill .graph .graph_s h3 {
-    margin: 20px 0 20px 0;
+#profile .in_profile .text_box .box1 {
+    width: 450px;
+    height: 330px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    margin: 60px 10px 40px 40px;
+    box-shadow: inset 0 0 8px 2px #ccc;
 }
 
-#skill .in_skill .graph .graph_s .pie4-1{
-    margin-right: 50px;
+#profile .in_profile .text_box .box2 {
+    width: 450px;
+    height: 330px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    margin: 60px 40px 40px 10px;
+    box-shadow: inset 0 0 8px 2px #ccc;
 }
 
+#profile .in_profile .text_box2 {
+    width: 1000px;
+    height: 380px;
+    margin-top: 10px;
+    float: right;
+}
 
-#skill .in_skill .graph .graph_s div {
-    width: 115px;
-    height: 115px;
-    margin-bottom: 45px;
+#profile .in_profile .text_box2 .box3 {
+    width: 917px;
+    height: 330px;
+    border-radius: 20px;
+    margin: 0px 0 0 40px;
+    background-color: aliceblue;
+    box-shadow: inset 0 0 8px 2px #ccc;
+}
+
+#profile .in_profile .text_box2 .box3 h3 {
+    font-size: 30px;
+    padding: 20px;
+    font-family: 'Manse';
 }
 
 #project {
@@ -327,6 +281,33 @@ html{
     font-family: 'Manse';
 }
 
+/* MAIL */
+.field {
+    margin-bottom: 10px;
+}
+
+.field label {
+    display: block;
+    font-size: 12px;
+    color: #777;
+}
+
+.field input {
+    display: block;
+    min-width: 250px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    display: block;
+    padding: 6px 30px;
+    font-size: 14px;
+    background-color: #4460AA;
+    color: #fff;
+    border: none
+}
+
 
 /* QUICK_MN */
 #q_mn {
@@ -335,10 +316,11 @@ html{
     top: 350px;
     z-index: 9999;
     width: 110px;
-    height: 205px;
+    height: 185px;
     border-radius: 15px;
     border: 3px solid #fff;
     background-color: rgb(25, 69, 122);
+
 }
 
 #q_mn .nav {
@@ -363,7 +345,7 @@ html{
 }
 
 #q_mn .nav li a {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     color: #fff;
     font-family: 'Manse';
