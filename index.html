@@ -6,145 +6,171 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LeeSeungHo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="./css/index.css">
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <script src="js/jquery.js"></script>
     <script src="js/index.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
 </head>
 
 <body>
     <div id="wrap">
+        <div id="q_mn">
+            <div class="logo">
+                <h3>SOMHO</h3>
+            </div>
+            <ul class="nav">
+                <li><a href="#">
+                    <i class="fa-solid fa-house fa-3x"></i>
+                </a></li>
+                <li><a href="#">
+                    <i class="fa-solid fa-user fa-3x"></i>
+                </a></li>
+                <li><a href="#">
+                    <i class="fa-solid fa-file-code fa-3x"></i>
+                </a></li>
+                <li><a href="#">
+                    <i class="fa-solid fa-paper-plane fa-3x"></i>
+                </a></li>
+            </ul>
+        </div>
         <!-- MAIN -->
         <div class="section" id="main">
             <div class="in_main">
-                <div class="header">
-                    <h1 class="logo">SOMHO</h1>
-                    <ul class="nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Profile</a></li>
-                        <li><a href="#">Project</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="m_pic">
-                    <div class="pic1">
-                        <div class="pic1_ani"></div>
-                        <img src="./image/pic11.jpg" alt="">
+                <div class="group">
+                    <div class="m_img">
+                        <img src="./image/img1.png" alt="">
                     </div>
-                    <div class="pic2">
+                    <div class="textbox">
+                        <h1>
+                        <span class="text">Hello!</span>
+                        <span class="text">It's SeungHo</span>
+                        <span class="text">Portfolio</span>
+                        </h1>
                     </div>
-                    <div class="pic3">
-                        <img src="./image/pic3.jpg" alt="">
-                    </div>
-                </div>
-                <div class="m_text">
-                    <h1 class="text"></h1>
-                    <h3 class="text2"></h3>
                 </div>
             </div>
         </div>
         <!-- PROFILE -->
         <div class="section" id="profile">
-            <div class="in_profile">
-                <h1 class="logo">About Me</h1>
-                <div class="group">
-                    <div class="pic_box"></div>
-                    <div class="intro_box">
-                        <h2>이승호</h2>
-                        <h3>Lee Seung Ho</h3>
-                        <div></div>
-                        <span>1996.05.21</span><br>
-                        <span>Busan</span><br>
-                        <span>010-XXXX-XXXX</span><br>
-                        <span>beyondle521@gmail.com</span><br>
+                <div class="in_profile">
+                    <div class="tabmn">
+                        <ul class="bt">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <h3>About Me</h3>
+                    </div>
+                    <div class="group">
+                        <div class="mn1">
+                            <div class="tg">
+                                <div class="tab1"></div>
+                                <div class="tab2">
+                                    <h3>Profile</h3>
+                                </div>
+                                <div class="tab3"></div>
+                            </div>
+                            <div class="tab4">
+                                <div class="pic">
+                                    <img src="./image/pic1.jpg" alt="">
+                                </div>
+                                <ul class="per">
+                                    <li>이승호</li>
+                                    <li>Lee Seung Ho</li>
+                                    <li><div></div></li>
+                                    <li>1996.05.21</li>
+                                    <li>Busan Haeundae</li>
+                                    <li>010-XXXX-XXXX</li>
+                                    <li>beyondle521@gmail.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mn2">
+                            <div class="edu">
+                                <div class="tg">
+                                    <div class="tab1"></div>
+                                    <div class="tab2">
+                                        <h3>Education</h3>
+                                    </div>
+                                    <div class="tab3"></div>
+                                </div>
+                                <div class="tab4">
+                                    <span>2015.12 대진정보통신고 졸업</span><br>
+                                    <span>2022.04 IOS SWIFT 프로그래밍 입문 수료</span><br>
+                                    <span>2022.07 경성대학교 컴퓨터공학과 졸업</span><br>
+                                    <span>2022.12 UI/UX기반 프론트엔드 개발자 양성과정 수료</span>
+                                </div>
+                            </div>
+                            <div class="exp">
+                                <div class="tg">
+                                    <div class="tab1"></div>
+                                    <div class="tab2">
+                                        <h3>Experience</h3>
+                                    </div>
+                                    <div class="tab3"></div>
+                                </div>
+                                <div class="tab4">
+                                    <span>2016.11 부산시설공단 교량관리처 단기 아르바이트</span><br>
+                                    <span>2020.09 이마트24 직영점 Parttime 근무</span><br>
+                                    <span>2020.03 네이버 스마트스토어(쇼핑몰) 관리 아르바이트</span><br>
+                                    <span>2021.11 (주)헥토그룹 브랜드 영상·콘티 공모전 대상 수상</span><br>
+                                    <span>2021.12 문화체육관광부 문화백신 영상·수기 공모전 금상 수상</span>
+                                </div>
+                            </div>
+                            <div class="lic">
+                                <div class="tg">
+                                    <div class="tab1"></div>
+                                    <div class="tab2">
+                                        <h3>License</h3>
+                                    </div>
+                                    <div class="tab3"></div>
+                                </div>
+                                <div class="tab4">
+                                    <span>2014.7 전자기기기능사 </span><br>
+                                    <span>2022.7 블록체인 전문가 2급</span><br>
+                                </div>
+                            </div>
+                            <div class="ski">
+                                <div class="tg">
+                                    <div class="tab1"></div>
+                                    <div class="tab2">
+                                        <h3>Skill</h3>
+                                    </div>
+                                    <div class="tab3"></div>
+                                </div>
+                                <div class="tab4">
+                                 
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="text_box">
-                    <div class="box1"></div>
-                    <div class="box2"></div>
-                </div>
-                <div class="text_box2">
-                    <div class="box3">
-                        <h3>Skill</h3>
-
-                    </div>
-                </div>
-            </div>
         </div>
         <!-- PROJECT -->
         <div class="section" id="project">
             <div class="in_project">
-                <h1 class="logo">Project</h1>
+                <div class="tabmn">
+                    <ul class="bt">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <h3>Project</h3>
+                </div>
+                <div class="in_mn">
+                    
+                </div>
             </div>
         </div>
         <!-- CONTACT -->
         <div class="section" id="contact">
             <div class="in_contact">
-                <h1 class="logo">Contact</h1>
-                <form id="form">
-                    <div class="field">
-                        <label for="from_name">From_name</label>
-                        <input type="text" name="from_name" id="from_name">
-                    </div>
-                    <div class="field">
-                        <label for="to_name">To_name</label>
-                        <input type="text" name="to_name" id="to_name">
-                    </div>
-                    <div class="field">
-                        <label for="message">Message</label>
-                        <input type="text" name="message" id="message">
-                    </div>
-                    <div class="field">
-                        <label for="tel">Tel</label>
-                        <input type="text" name="tel" id="tel">
-                    </div>
-                    <div class="field">
-                        <label for="reply_to">Reply_to</label>
-                        <input type="text" name="reply_to" id="reply_to">
-                    </div>
-
-                    <input type="submit" id="button" value="Send Email">
-                </form>
+               
             </div>
         </div>
-    </div>
-    <!-- QUICKMN -->
-    <div id="q_mn">
-        <ul class="nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Project</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </div>
+</div>
 </body>
-<!-- MAIL -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
-<script type="text/javascript">
-    emailjs.init('CRztwVsXLzMBJUNV9')
-
-    const btn = document.getElementById('button');
-
-    document.getElementById('form')
-        .addEventListener('submit', function (event) {
-            event.preventDefault();
-
-            btn.value = 'Sending...';
-
-            const serviceID = 'service_ddzcjss';
-            const templateID = 'template_jeauwhm';
-
-            emailjs.sendForm(serviceID, templateID, this)
-                .then(() => {
-                    btn.value = 'Send Email';
-                    alert('메일보내기 성공');
-                }, (err) => {
-                    btn.value = 'Send Email';
-                    alert(JSON.stringify(err));
-                });
-        });
-</script>
-
 </html>

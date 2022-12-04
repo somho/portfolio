@@ -16,73 +16,59 @@ $(function () {
         }
         var posTop = (page - 1) * $(window).height();
         mHtml.animate({ scrollTop: posTop });
+    });
+
+     // NAV
+     $('.nav li > a').eq(0).addClass('on');
+     const menu = $('.nav>li');
+     const contents = $('.section');
+ 
+     menu.click(function(event){
+         event.preventDefault();
+ 
+         let i = $(this).index();
+         let section = contents.eq(i);   
+         let tt = section.offset().top;  
+ 
+         $('html,body').stop().animate({scrollTop: tt}); 
+ 
+         $('.nav li > a').removeClass('on');
+         $(this).addClass('on');
+     });
+ 
+     $('.nav> li').on({
+         mouseover: function () {
+             $(this).find('a').addClass('on');
+         },
+         mouseout: function () {
+             $('.nav>li').find('a').removeClass('on');
+         }
+     });
+
+     $(window).scroll(function(){
+        const sct = $(window).scrollTop(); 
+        contents.each(function(){   
+            let tg = $(this);
+            let i = tg.index();
+            if (tg.offset().top <= sct){   
+                menu.find('a').removeClass('on');
+                menu.eq(i-1).find('a').addClass('on');
+            }
+        });
     })
 
-    // NAV
-    var menu = $('.nav > li');
-    var contents = $('#wrap > div');
+    // MAIN
+    $(document).ready(function() {
+        $(".text").lettering();
+      });
+    $(document).ready(function() {
+        animation();
+    }, 1000);
 
-    $('.nav> li').click(function (event) {
-        event.preventDefault();
-        var tg = $(this);
-        var i = tg.index();
-
-        var section = $('#wrap > div').eq(i);
-        var tt = section.offset().top;
-
-        $('html, body').stop().animate({ scrollTop: tt });
-    });
-
-    $('.nav> li').on({
-        mouseover: function () {
-            $(this).find('a').addClass('on');
-        },
-        mouseout: function () {
-            $('.nav>li').find('a').removeClass('on');
-        }
-
-    });
-
-    // M_TEXT
-    const content = "Hello.\n It's Seung Ho \n PORTFOLIO"
-    const content2 = "UX Designer & Front End Developer."
-    const text = document.querySelector('.text');
-    const text2 = document.querySelector('.text2');
-    let i = 0;
-    let j = 0;
-
-    function typing() {
-        if (i < content.length) {
-            let txt = content.charAt(i);
-            text.innerHTML += txt === "\n" ? "<br/>" : txt;
-            i++;
-        }
-    }
-
-    function typing2() {
-        setTimeout(function () {
-            if (j < content2.length) {
-                let txt2 = content2.charAt(j);
-                text2.innerHTML += txt2;
-                j++;
-            }
-        }, 1800);
-    }
-    setInterval(typing, 50);
-    setInterval(typing2, 20)
-
-    // M_PIC
-    const pic1 = document.querySelector('.pic1');
-    const pic3 = document.querySelector('.pic3');
-
-    pic1.classList.add('on');
-    pic3.classList.add('on');
-
-    // QUICKMN
-    $(window).scroll(
-        function () {
-            var windowTop = $(window).scrollTop() + 350;
-            $("#q_mn").stop().animate({ top: windowTop + "px" }, 300);
-        }
-    );
+    function animation() {
+        var title1 = new TimelineMax();
+        title1.staggerFromTo(".text span", 0.5, 
+        {ease: Back.easeOut.config(1.7), opacity: 0, bottom: -80},
+        {ease: Back.easeOut.config(1.7), opacity: 1, bottom: 0}, 0.05);
+      }
 });
