@@ -3,7 +3,7 @@ $(function () {
     var mHtml = $('html');
     var page = 1;
 
-    mHtml.animate({ scrollTop: 0 }, 10);
+    mHtml.animate({ scrollTop: 0 }, 5);
 
     $(window).on("wheel", function (e) {
         if (mHtml.is(":animated")) return;
@@ -71,4 +71,59 @@ $(function () {
         {ease: Back.easeOut.config(1.7), opacity: 0, bottom: -80},
         {ease: Back.easeOut.config(1.7), opacity: 1, bottom: 0}, 0.05);
       }
+
+    // PROJECT
+    let status = "closed";
+    const tab = document.querySelector('.in_mn ul li .txt i');
+    const slider = document.querySelector('.in_mn ul li .pic .in_txt');
+    const tab2 = document.querySelector('.in_mn ul li:nth-child(2) .txt i');
+    const slider2 = document.querySelector('.in_mn ul li:nth-child(2) .pic .in_txt');
+    const tab3 = document.querySelector('.in_mn ul li:nth-child(3) .txt i');
+    const slider3 = document.querySelector('.in_mn ul li:nth-child(3) .pic .in_txt');
+    const tab4 = document.querySelector('.in_mn ul li:nth-child(4) .txt i');
+    const slider4 = document.querySelector('.in_mn ul li:nth-child(4) .pic .in_txt');
+
+    tab.addEventListener("click", function (e){
+          if (status == "closed"){
+             status = "open";
+             slider.classList.add("on");
+            }
+            else if (status == "open") {
+                status = "closed";
+                slider.classList.remove("on");
+            }
+        })
+    
+    tab2.addEventListener("click", function (e){
+            if (status == "closed"){
+               status = "open";
+               slider2.classList.add("on");
+              }
+              else if (status == "open") {
+                  status = "closed";
+                  slider2.classList.remove("on");
+              }
+          })
+
+    tab3.addEventListener("click", function (e){
+            if (status == "closed"){
+               status = "open";
+               slider3.classList.add("on");
+              }
+              else if (status == "open") {
+                  status = "closed";
+                  slider3.classList.remove("on");
+              }
+          }) 
+
+    tab4.addEventListener("click", function (e){
+        if (status == "closed"){
+            status = "open";
+            slider4.classList.add("on");
+              }
+              else if (status == "open") {
+                  status = "closed";
+                  slider4.classList.remove("on");
+              }
+          }) 
 });
