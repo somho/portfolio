@@ -296,10 +296,11 @@ body {
 }
 
 #profile .mn1 .tab4 .pic img {
-    width: 280px;
+    width: 350px;
     height: 410px;
     position: relative;
-    left: -30px;
+    top: -105px;
+    left: -75px;
 }
 
 #profile .mn1 .tab4 ul {
@@ -310,7 +311,7 @@ body {
 
 #profile .mn1 .tab4 ul li {
     font-size: 17px;
-    line-height: 45px;
+    line-height: 48px;
 }
 
 #profile .mn1 .tab4 ul li>div {
@@ -748,6 +749,86 @@ body {
     font-weight: 700;
     letter-spacing: 1px;
 }
+
+#contact .in_contact .in_mn {
+    width: 735px;
+    height: 655px;
+    background-color: rgb(242, 242, 242);
+    margin: 50px 50px 50px 63px;
+    border-radius: 10px;
+    position: relative;
+}
+
+#contact .in_contact .in_mn .quote1 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+#contact .in_contact .in_mn .quote2 {
+    position: absolute;
+    top: 240px;
+    right: 50px;
+}
+
+#contact .in_contact .in_mn .box1 {
+    width: 450px;
+    height: 130px;
+    text-align: center;
+    position: absolute;
+    top: 90px;
+    left: 140px;
+}
+
+#contact .in_contact .in_mn .box1 .text1 {
+    font-size: 26px;
+}
+
+#contact .in_contact .in_mn .box1 .text2 {
+    font-size: 26px;
+    display: none;
+}
+
+#contact .in_contact .in_mn .box1 h3 {
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.m-flip {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.m-flip_item {
+    display: block;
+    position: relative;
+    top: 0;
+    transition: top .2s ease-out 0s;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#contact .in_contact .in_mn .box2 {
+    width: 500px;
+    height: 210px;
+    text-align: center;
+    position: absolute;
+    top: 370px;
+    left: 110px;
+}
+
+#contact .in_contact .in_mn .box2 span {
+    font-size: 27px;
+    font-weight: 500;
+}
+
+#contact .in_contact .in_mn .box2 p {
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 40px;
+    font-family: 'Manse';
+}
+
 
 #contact .in_contact2 {
     width: 35%;
