@@ -78,6 +78,8 @@ $(function () {
     }
 
     // PROJECT
+
+
     var $play = $('.play'),
         $detail = $('.detail'),
         $movie = $('.movie', $detail),
@@ -148,6 +150,40 @@ $(function () {
         }
     })
 
-    // MAIL
+    // CONTACT
+    $.fn.flip = function (options) {
+        var options = $.extend({
+            targetClass: '.m-flip_item'
+        }, options);
+
+        return this.each(function () {
+            console.log(this);
+            var $this = $(this),
+                $target = $this.find(options.targetClass);
+
+            $this
+                .on({
+                    'init.flip': function () {
+                        var targetFirst_height = $target.eq(0).height();
+
+                        $this
+                            .data('height', targetFirst_height)
+                            .css({ height: targetFirst_height });
+                    },
+                    'mouseenter.flip': function () {
+                        $target.css({ top: -$this.data('height') + 'px' });
+                    },
+                    'mouseleave.flip': function () {
+                        $target.css({ top: 0 + 'px' });
+                    }
+                })
+                .trigger('init.flip');
+        });
+    };
+
+    $(function () {
+        $('.js-flip').flip();
+    });
 
 });
+
