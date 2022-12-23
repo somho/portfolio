@@ -226,6 +226,10 @@ Detail
   cursor: pointer;
 }
 
+.detail .desc .link:hover {
+  color: #ccc;
+}
+
 .detail .desc .link i {
   margin-left: 10px;
   margin-top: 7px;

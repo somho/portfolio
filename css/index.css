@@ -241,12 +241,12 @@ body {
 #profile .mn1 .tg h3 {
     margin: 10px;
     font-size: 18px;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
 }
 
 #profile .mn1 .tab4 span {
     font-size: 17px;
-    line-height: 65px;
+    line-height: 33px;
     font-weight: 600;
     margin-left: 20px;
 }
@@ -259,7 +259,7 @@ body {
 }
 
 #profile .mn1 .tab2 {
-    width: 95px;
+    width: 91px;
     margin-top: 5px;
     height: 35px;
     background-color: #fff;
@@ -303,29 +303,30 @@ body {
     left: -75px;
 }
 
-#profile .mn1 .tab4 ul {
+#profile .mn1 .tab4 .per {
     width: 300px;
     height: 270px;
     text-align: center;
 }
 
-#profile .mn1 .tab4 ul li {
+#profile .mn1 .tab4 .per li {
     font-size: 17px;
     line-height: 48px;
 }
 
-#profile .mn1 .tab4 ul li>div {
+#profile .mn1 .tab4 .per li>div {
     width: 90px;
-    height: 3px;
+    height: 2px;
     background-color: #000;
     margin: 0 auto;
 }
 
-#profile .mn1 .tab4 ul li:nth-child(1) {
+#profile .mn1 .tab4 .per li:nth-child(1) {
     font-size: 25px;
 }
 
-#profile .mn1 .tab4 ul li:nth-child(2) {
+#profile .mn1 .tab4 .per li:nth-child(2) {
+    margin-top: -8px;
     font-size: 18px;
 }
 
@@ -365,15 +366,19 @@ body {
 #profile .mn2 .edu .tg h3 {
     margin: 10px;
     font-size: 18px;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
 }
 
 #profile .mn2 .edu .tab4 span {
     font-size: 17px;
-    line-height: 65px;
+    line-height: 53px;
     font-weight: 600;
     margin-left: 20px;
 }
+
+#profile .mn2 .edu .tab4 span:nth-child(1) {}
+
+
 
 #profile .edu .tab1 {
     width: 10px;
@@ -383,7 +388,7 @@ body {
 }
 
 #profile .edu .tab2 {
-    width: 135px;
+    width: 130px;
     margin-top: 5px;
     height: 35px;
     background-color: #fff;
@@ -429,12 +434,12 @@ body {
 #profile .mn2 .exp .tg h3 {
     margin: 10px;
     font-size: 18px;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
 }
 
 #profile .mn2 .exp .tab4 span {
     font-size: 17px;
-    line-height: 53px;
+    line-height: 48px;
     font-weight: 600;
     margin-left: 20px;
 }
@@ -447,7 +452,7 @@ body {
 }
 
 #profile .exp .tab2 {
-    width: 145px;
+    width: 141px;
     margin-top: 5px;
     height: 35px;
     background-color: #fff;
@@ -494,7 +499,7 @@ body {
 #profile .mn2 .lic .tg h3 {
     margin: 10px;
     font-size: 18px;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
 }
 
 #profile .mn2 .lic .tab4 span {
@@ -512,7 +517,7 @@ body {
 }
 
 #profile .lic .tab2 {
-    width: 110px;
+    width: 102px;
     margin-top: 5px;
     height: 35px;
     background-color: #fff;
@@ -558,7 +563,7 @@ body {
 #profile .mn2 .ski .tg h3 {
     margin: 10px;
     font-size: 18px;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
 }
 
 #profile .mn2 .ski .tab4 span {
@@ -576,7 +581,7 @@ body {
 }
 
 #profile .ski .tab2 {
-    width: 67px;
+    width: 64px;
     margin-top: 5px;
     height: 35px;
     background-color: #fff;
@@ -818,14 +823,14 @@ body {
 }
 
 #contact .in_contact .in_mn .box2 span {
-    font-size: 27px;
+    font-size: 23px;
     font-weight: 500;
 }
 
 #contact .in_contact .in_mn .box2 p {
     font-size: 32px;
     font-weight: 600;
-    margin-top: 40px;
+    margin-top: 46px;
     font-family: 'Manse';
 }
 
@@ -885,42 +890,84 @@ body {
     letter-spacing: 1px;
 }
 
+/* MAIL */
 #contact .in_contact2 .in_mn {
     width: 550px;
     height: 655px;
     background-color: rgb(242, 242, 242);
     margin: 50px 50px 50px 63px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
-/* MAIL */
-.field {
-    margin: 50px 0 10px 20px;
-    /* display: flex; */
-}
 
-.field label {
-    margin-top: 30px;
-    display: block;
+#contact .in_contact2 .in_mn h3 {
     font-size: 20px;
-    color: #777;
+    margin-bottom: 5px;
 }
 
-.field input {
-    display: block;
-    width: 200px;
-    line-height: 1.5;
-    font-size: 14px;
-    border: 0;
+#contact .in_contact2 .in_mn .box1 {
+    margin: 30px 0 0 50px;
 }
 
-input[type="submit"] {
-    width: 200px;
+#contact .in_contact2 .in_mn .box1 .name {
+    width: 250px;
     height: 30px;
-    display: block;
-    padding: 6px 30px;
-    font-size: 14px;
-    background-color: #4460AA;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Gmarket';
+}
+
+#contact .in_contact2 .in_mn .box2 {
+    margin: 30px 0 0 50px;
+}
+
+#contact .in_contact2 .in_mn .box2 .email {
+    width: 250px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Gmarket';
+}
+
+#contact .in_contact2 .in_mn .box3 {
+    margin: 30px 0 0 50px;
+}
+
+#contact .in_contact2 .in_mn .box3 .phone {
+    width: 250px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Gmarket';
+}
+
+#contact .in_contact2 .in_mn .box4 {
+    margin: 30px 0 0 50px;
+}
+
+#contact .in_contact2 .in_mn .box4 .message {
+    width: 450px;
+    height: 150px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Gmarket';
+}
+
+#contact .in_contact2 .in_mn .btn {
+    margin: 40px 0 0 50px;
+    width: 450px;
+    height: 30px;
+    background-color: rgb(54, 126, 24);
     color: #fff;
-    border: none
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    font-weight: 500;
+    font-family: 'Gmarket';
+}
+
+#contact .in_contact2 .in_mn .btn:hover {
+    background-color: rgb(92, 187, 51);
 }
