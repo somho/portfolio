@@ -94,16 +94,16 @@ projects
   justify-content: space-around;
 }
 
-.projects .movie {
+.projects .pjbox {
   padding: 10px;
   cursor: pointer;
 }
 
-.projects .movie:hover {
+.projects .pjbox:hover {
   color: rgb(54, 126, 24);
 }
 
-.projects .movie .preview {
+.projects .pjbox .preview {
   width: 300px;
   height: 400px;
   margin-bottom: 6px;
@@ -111,23 +111,23 @@ projects
   border: 1px solid #ccc;
 }
 
-.projects .movie .preview.active {
+.projects .pjbox .preview.active {
   opacity: 0;
 }
 
-.projects .movie .title {
+.projects .pjbox .title {
   margin-top: 10px;
   margin-bottom: 4px;
   font-size: 17px;
 }
 
-.projects .movie .info {
+.projects .pjbox .info {
   color: #525661;
   font-size: 11px;
   opacity: 0.8;
 }
 
-.projects .movie .desc {
+.projects .pjbox .desc {
   display: none;
 }
 
@@ -211,7 +211,7 @@ Detail
 
 .detail .desc {
   margin-top: 30px;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.6;
 }
 
