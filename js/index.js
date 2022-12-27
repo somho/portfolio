@@ -82,13 +82,13 @@ $(function () {
 
     var $play = $('.play'),
         $detail = $('.detail'),
-        $movie = $('.movie', $detail),
+        $pjbox = $('.pjbox', $detail),
         $close = $('.close'),
         $preview = $('.preview');
 
-    $('.projects .movie').click(function () {
-        $movie.html($(this).html());
-        $play.appendTo($movie);
+    $('.projects .pjbox').click(function () {
+        $pjbox.html($(this).html());
+        $play.appendTo($pjbox);
 
         $preview = $('.preview', this).addClass('active');
 
